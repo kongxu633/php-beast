@@ -107,11 +107,11 @@ static int beast_debug_mode = 0;
  * Every user visible function must have an entry in beast_functions[].
  */
 zend_function_entry beast_functions[] = {
-    PHP_FE(beast_encode_file,      NULL)
-    PHP_FE(beast_avail_cache,      NULL)
-    PHP_FE(beast_support_filesize, NULL)
-    PHP_FE(beast_file_expire,      NULL)
-    PHP_FE(beast_clean_cache,      NULL)
+    PHP_FE(beast_encode_file,      arginfo_void)
+    PHP_FE(beast_avail_cache,      arginfo_void)
+    PHP_FE(beast_support_filesize, arginfo_void)
+    PHP_FE(beast_file_expire,      arginfo_void)
+    PHP_FE(beast_clean_cache,      arginfo_void)
     {NULL, NULL, NULL}    /* Must be the last line in beast_functions[] */
 };
 /* }}} */
