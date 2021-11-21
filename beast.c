@@ -102,6 +102,9 @@ static int log_normal_file = 0;
 static char *beast_debug_path = NULL;
 static int beast_debug_mode = 0;
 
+ZEND_BEGIN_ARG_INFO_EX(arginfo_void, 0, 0, 0)
+ZEND_END_ARG_INFO()
+
 /* {{{ beast_functions[]
  *
  * Every user visible function must have an entry in beast_functions[].
